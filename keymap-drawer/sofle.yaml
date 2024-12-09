@@ -57,11 +57,11 @@ layers:
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:arrow-left-bold$$
+  - $$mdi:keyboard-space$$
   - {t: '$$mdi:arrow-up-bold$$', h: LAYER1}
-  - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - $$mdi:keyboard-space$$
   - {t: '$$mdi:arrow-down-bold$$', h: LAYER2}
+  - $$mdi:keyboard-space$$
   - $$mdi:arrow-right-bold$$
   - {t: '-', s: _}
   - {t: '=', s: +}
@@ -122,11 +122,11 @@ layers:
   - LMETA
   - $$mdi:apple-keyboard-option$$
   - PG UP
+  - $$mdi:keyboard-space$$
   - {type: held}
-  - $$mdi:keyboard-space$$
   - $$mdi:mouse-left-click-outline$$
-  - $$mdi:keyboard-space$$
   - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:keyboard-space$$
   - END
   - _
   - +
@@ -187,11 +187,11 @@ layers:
   - LMETA
   - $$mdi:apple-keyboard-option$$
   - HOME
+  - $$mdi:keyboard-space$$
   - PG UP
-  - $$mdi:keyboard-space$$
   - $$mdi:mouse-right-click-outline$$
-  - $$mdi:keyboard-space$$
   - {t: PG DN, type: held}
+  - $$mdi:keyboard-space$$
   - END
   - _
   - +
