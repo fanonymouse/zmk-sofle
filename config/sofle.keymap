@@ -30,12 +30,23 @@
                 , <&macro_release &kp LSHFT>
                 , <&macro_tap &kp W &kp N0 &kp R &kp D>
                 , <&macro_press &kp LSHFT>
-                , <&macro_tap &kp N3 &kp N1 &kp N4 &kp N1 &kp N5 &kp N9 &kp N2 &kp N6 >
+                , <&macro_tap &kp N2 &kp N0 &kp N2 &kp N4 &kp N1 &kp N2 &kp N0 &kp N9 >
                 , <&macro_release &kp LSHFT>
                 ;
         };
+        my_pwd: my_pwd {
+            compatible = "zmk, behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LSHIFT>
+                , <&macro_tap &kp P &kp N2 &kp N4 &kp N4>
+                , <&macro_release &kp LSHIFT>
+                , <&macro_tap &kp W &kp N0 &kp R &kp D &kp N3 &kp N1 &kp N4 &kp N1>
+                ;
     };
 };
+
+
 
 / {
     behaviors {
@@ -79,7 +90,7 @@
         layer_1 {
             bindings = <
             &kp GRAVE  &kp F1    &kp F2   &kp F3    &kp F4  &kp F5    &mmv MOVE_UP     &kp F6    &kp F7    &kp F8    &kp F9    &kp F10   &trans   
-            &kp CAPS   &trans    &trans   &trans    &trans  &trans    &mmv MOVE_DOWN   &trans    &trans    &trans    &kp MINUS &kp EQUAL &trans   
+            &kp CAPS   &as_pwd   &my_pwd  &trans    &trans  &trans    &mmv MOVE_DOWN   &trans    &trans    &trans    &kp MINUS &kp EQUAL &trans   
             &kp LCTRL  &trans    &trans   &trans    &trans  &trans    &mmv MOVE_LEFT   &trans    &trans    &trans    &kp LBKT  &kp RBKT  &trans   
             &kp LSHIFT &kp F11   &kp F12  &kp PSCRN &kp DEL &trans    &mmv MOVE_RIGHT  &trans    &trans    &trans    &kp LBRC  &kp RBRC  &trans   
             &trans     &kp LMETA &kp LALT &kp PG_UP &trans  &kp SPACE &mkp LCLK        &kp SPACE &trans    &kp END   &kp UNDER &kp PLUS  
