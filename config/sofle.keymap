@@ -43,6 +43,7 @@
                 , <&macro_release &kp LSHIFT>
                 , <&macro_tap &kp W &kp N0 &kp R &kp D &kp N3 &kp N1 &kp N4 &kp N1>
                 ;
+        };
     };
 };
 
