@@ -8,3 +8,5 @@ include:
   - board: sofle_right
     shield: nice_view_adapter nice_view_custom
     artifact-name: sofle_right_nice_view
+  - board: sofle_center
+    artifact-name: sofle_center
