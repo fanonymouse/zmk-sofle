@@ -78,10 +78,10 @@
             &kp CAPS   &trans    &trans   &trans    &trans  &trans    &mmv MOVE_DOWN   &trans    &trans    &trans    &kp MINUS &kp EQUAL &trans   
             &kp LCTRL  &trans    &trans   &trans    &trans  &trans    &mmv MOVE_LEFT   &trans    &trans    &trans    &kp LBKT  &kp RBKT  &trans   
             &kp LSHIFT &kp F11   &kp F12  &kp PSCRN &kp DEL &trans    &mmv MOVE_RIGHT  &trans    &trans    &trans    &kp LBRC  &kp RBRC  &trans   
-            &trans     &kp LMETA &kp LALT &kp PG_UP &trans  &kp SPACE &mkp LCLK        &kp SPACE &trans    &kp END   &kp UNDER &kp PLUS  &trans    
+            &trans     &kp LMETA &kp LALT &kp PG_UP &trans  &kp SPACE &mkp LCLK        &kp SPACE &trans    &kp END   &kp UNDER &kp PLUS  
             >;
 
-            display-name = "layer1";
+            display-name = "LAYER1";
             sensor-bindings = <&scroll_encoder>;
         };
 
@@ -91,9 +91,10 @@
             &kp CAPS   &trans    &trans   &trans   &trans    &trans    &mmv MOVE_DOWN   &trans    &trans    &trans  &kp UNDER &kp PLUS &trans         
             &kp LCTRL  &trans    &trans   &trans   &trans    &trans    &mmv MOVE_LEFT   &trans    &trans    &trans  &kp LBKT  &kp RBKT &trans         
             &kp LSHIFT &trans    &trans   &trans   &trans    &trans    &mmv MOVE_RIGHT  &trans    &trans    &trans  &kp LBRC  &kp RBRC &trans         
-            &trans     &kp LMETA &kp LALT &kp HOME &kp PG_UP &kp SPACE &mkp RCLK        &kp SPACE &kp PG_DN &kp END &kp UNDER &kp PLUS &trans         
+            &trans     &kp LMETA &kp LALT &kp HOME &kp PG_UP &kp SPACE &mkp RCLK        &kp SPACE &kp PG_DN &kp END &kp UNDER &kp PLUS 
             >;
 
+            display-name = "LAYER2";
             sensor-bindings = <&scroll_encoder>;
         };
     };
