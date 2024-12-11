@@ -56,13 +56,13 @@ layers:
   - PLAY PAUSE
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
+  - $$mdi:keyboard-space$$
   - $$mdi:arrow-left-bold$$
   - {t: '$$mdi:arrow-up-bold$$', h: LAYER1}
-  - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - $$mdi:keyboard-space$$
   - {t: '$$mdi:arrow-down-bold$$', h: LAYER2}
   - $$mdi:arrow-right-bold$$
+  - $$mdi:keyboard-space$$
   - {t: '-', s: _}
   - {t: '=', s: +}
   LAYER1:
@@ -121,13 +121,13 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - LMETA
   - $$mdi:apple-keyboard-option$$
+  - $$mdi:keyboard-space$$
   - PG UP
   - {type: held}
-  - $$mdi:keyboard-space$$
   - $$mdi:mouse-left-click-outline$$
-  - $$mdi:keyboard-space$$
   - {t: '$$mdi:transfer$$', type: trans}
   - END
+  - $$mdi:keyboard-space$$
   - _
   - +
   LAYER2:
@@ -186,12 +186,12 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - LMETA
   - $$mdi:apple-keyboard-option$$
+  - $$mdi:keyboard-space$$
   - HOME
   - PG UP
-  - $$mdi:keyboard-space$$
   - $$mdi:mouse-right-click-outline$$
-  - $$mdi:keyboard-space$$
   - {t: PG DN, type: held}
   - END
+  - $$mdi:keyboard-space$$
   - _
   - +
