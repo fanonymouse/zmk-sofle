@@ -26,7 +26,33 @@
 #define LAYER_1  1
 #define LAYER_2  2
 
-
+/ {
+    macros {
+        as_pwd: as_pwd {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LSHFT>
+                , <&macro_tap &kp P &kp N2 &kp N4 &kp N4>
+                , <&macro_release &kp LSHFT>
+                , <&macro_tap &kp W &kp N0 &kp R &kp D>
+                , <&macro_press &kp LSHFT>
+                , <&macro_tap &kp N2 &kp N0 &kp N2 &kp N4 &kp N1 &kp N2 &kp N0 &kp N9>
+                , <&macro_release &kp LSHFT>
+                ;
+        };
+        my_pwd: my_pwd {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LSHFT>
+                , <&macro_tap &kp P &kp N2 &kp N4 &kp N4>
+                , <&macro_release &kp LSHFT>
+                , <&macro_tap &kp W &kp N0 &kp R &kp D &kp N3 &kp N1 &kp N4 &kp N1>
+                ;
+        };
+    };
+};
 
 / {
     behaviors {
