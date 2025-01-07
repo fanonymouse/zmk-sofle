@@ -55,16 +55,16 @@ layers:
   - PLAY PAUSE
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
-  - {t: '$$mdi:keyboard-space$$', h: LAYER1}
+  - {t: '$$mdi:keyboard-space$$', h: '1'}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-up-bold$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
-  - {t: '$$mdi:keyboard-space$$', h: LAYER2}
+  - {t: '$$mdi:keyboard-space$$', h: '2'}
   - {t: '-', s: _}
   - {t: '=', s: +}
-  LAYER1:
+  '1':
   - {t: '`', s: '~'}
   - F1
   - F2
@@ -129,7 +129,7 @@ layers:
   - $$mdi:keyboard-space$$
   - _
   - +
-  LAYER2:
+  '2':
   - '~'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
