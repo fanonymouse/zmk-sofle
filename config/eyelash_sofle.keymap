@@ -22,9 +22,7 @@
 #define ZMK_MOUSE_DEFAULT_MOVE_VAL 1200  // 600
 #define ZMK_MOUSE_DEFAULT_SCRL_VAL 20    // 10
 
-#define DEFAULT 0
-#define LAYER_1  1
-#define LAYER_2  2
+
 
 
 / {
@@ -83,7 +81,6 @@
             &trans     &kp LMETA &kp LALT &trans    &trans  &trans   &mkp LCLK         &kp PG_DN &kp END   &kp SPACE &kp UNDER &kp PLUS  
             >;
 
-            display-name = "LAYER1";
             sensor-bindings = <&scroll_encoder_v>;
         };
 
@@ -96,7 +93,6 @@
             &trans     &kp LMETA &kp LALT &kp SPACE &kp HOME &kp PG_UP &mkp RCLK        &trans    &trans    &trans &kp UNDER &kp PLUS 
             >;
 
-            display-name = "LAYER2";
             sensor-bindings = <&scroll_encoder_h>;
         };
     };
