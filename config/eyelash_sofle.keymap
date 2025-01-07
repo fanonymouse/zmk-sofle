@@ -51,6 +51,42 @@
                 , <&macro_tap &kp W &kp N0 &kp R &kp D &kp N3 &kp N1 &kp N4 &kp N1>
                 ;
         };
+        j_toggle: j_toggle {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LALT>
+                , <&macro_tap &kp GRAVE>
+                , <&macro_release &kp LALT>
+                ;
+        };
+        j_hiragana: j_hiragana {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                , <&macro_tap &kp CAPS>
+                , <&macro_release &kp LCTRL>
+                ;
+        };
+        j_katakana: j_katakana {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LALT>
+                , <&macro_tap &kp CAPS>
+                , <&macro_release &kp LALT>
+                ;
+        };
+        j_eisu: j_eisu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LSHIFT>
+                , <&macro_tap &kp CAPS>
+                , <&macro_release &kp LSHIFT>
+                ;
+        };
     };
 };
 
