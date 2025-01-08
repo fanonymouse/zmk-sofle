@@ -56,15 +56,15 @@ layers:
   - LGUI
   - $$mdi:apple-keyboard-option$$
   - $$mdi:keyboard-space$$
-  - {t: '$$mdi:arrow-left-bold$$', h: '1'}
+  - {t: '$$mdi:arrow-left-bold$$', h: LAYER1}
   - $$mdi:arrow-up-bold$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:arrow-down-bold$$
-  - {t: '$$mdi:arrow-right-bold$$', h: '2'}
+  - {t: '$$mdi:arrow-right-bold$$', h: LAYER2}
   - $$mdi:keyboard-space$$
   - {t: '-', s: _}
   - {t: '=', s: +}
-  '1':
+  LAYER1:
   - {t: '`', s: '~'}
   - F1
   - F2
@@ -129,7 +129,7 @@ layers:
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  '2':
+  LAYER2:
   - '~'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
