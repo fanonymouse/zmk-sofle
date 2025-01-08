@@ -166,11 +166,11 @@
 
         layer_2 {
             bindings = <
-            &kp TILDE  &trans    &trans   &trans   &trans    &trans    &mmv MOVE_UP     &trans    &trans    &trans  &trans    &trans   &trans         
-            &kp CAPS   &trans    &trans   &trans   &trans    &trans    &mmv MOVE_DOWN   &trans    &trans    &trans  &kp UNDER &kp PLUS &trans         
-            &kp LCTRL  &trans    &trans   &trans   &trans    &trans    &mmv MOVE_LEFT   &trans    &trans    &trans  &kp LBKT  &kp RBKT &trans         
-            &kp LSHIFT &trans    &trans   &trans   &trans    &trans    &mmv MOVE_RIGHT  &trans    &trans    &trans  &kp LBRC  &kp RBRC &trans         
-            &trans     &kp LMETA &kp LALT &kp SPACE &kp HOME &kp PG_UP &mkp RCLK        &trans    &trans    &trans &kp UNDER &kp PLUS 
+            &kp TILDE  &trans    &trans   &trans   &trans    &trans    &mmv MOVE_UP     &trans      &trans    &trans      &trans    &trans   &trans         
+            &kp CAPS   &trans    &trans   &trans   &trans    &trans    &mmv MOVE_DOWN   &trans      &trans    &j_eisu     &kp UNDER &kp PLUS &trans         
+            &kp LCTRL  &trans    &trans   &trans   &trans    &trans    &mmv MOVE_LEFT   &j_hiragana &j_toggle &j_katakana &kp LBKT  &kp RBKT &trans         
+            &kp LSHIFT &trans    &trans   &trans   &trans    &trans    &mmv MOVE_RIGHT  &trans      &trans    &trans      &kp LBRC  &kp RBRC &trans         
+            &trans     &kp LMETA &kp LALT &kp SPACE &kp HOME &kp PG_UP &mkp RCLK        &trans      &trans    &trans      &kp UNDER &kp PLUS 
             >;
 
             sensor-bindings = <&scroll_encoder_h>;
