@@ -90,13 +90,6 @@
     };
 };
 
-&lt {
-   flavor = "balanced";
-   tapping-term-ms = <200>;
-   quick-tap-ms = <200>;
-   require-prior-idle-ms = <125>;
-};
-
 / {
     behaviors {
         mmv {
@@ -153,7 +146,6 @@
         };
 
         layer_1 {
-            
             bindings = <
             &kp GRAVE  &kp F1     &kp F2     &kp F3     &kp F4     &kp F5        &mmv MOVE_UP     &kp F6     &kp F7     &kp F8     &kp F9     &kp F10    &trans
             &kp CAPS   &as_pwd    &my_pwd    &trans     &trans     &trans        &mmv MOVE_DOWN   &trans     &trans     &kp MINUS  &kp EQUAL  &trans     &trans
@@ -163,6 +155,7 @@
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
+            display-name = "LAYER1";
         };
 
         layer_2 {
@@ -175,6 +168,7 @@
             >;
 
             sensor-bindings = <&scroll_encoder_v>;
+            display-name = "LAYER2";
         };
     };
 };
