@@ -51,7 +51,7 @@
                 , <&macro_tap &kp W &kp N0 &kp R &kp D &kp N3 &kp N1 &kp N4 &kp N1>
                 ;
         };
-        j_toggle: j_toggle {
+        j_tog: j_ime_toggle {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -60,7 +60,7 @@
                 , <&macro_release &kp LALT>
                 ;
         };
-        j_hiragana: j_hiragana {
+        j_hir: j_ime_hiragana {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -69,7 +69,7 @@
                 , <&macro_release &kp LCTRL>
                 ;
         };
-        j_katakana: j_katakana {
+        j_kat: j_ime_katakana {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -78,7 +78,7 @@
                 , <&macro_release &kp LALT>
                 ;
         };
-        j_eisu: j_eisu {
+        j_eisu: j_ime_eisu {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -168,8 +168,8 @@
         layer_2 {
             bindings = <
             &kp TILDE  &trans     &trans     &trans     &trans     &trans        &mmv MOVE_UP     &trans     &trans     &trans     &trans     &trans     &trans
-            &kp CAPS   &trans     &trans     &trans     &trans     &trans        &mmv MOVE_DOWN   &j_eisu  &j_katakana  &kp UNDER  &kp PLUS   &trans     &trans
-            &kp LCTRL  &trans     &trans     &trans     &trans     &trans        &mmv MOVE_LEFT   &j_hiragana  &j_toggle  &kp LBKT  &kp RBKT  &trans     &trans
+            &kp CAPS   &trans     &trans     &trans     &trans     &trans        &mmv MOVE_DOWN   &j_eisu    &j_kat     &kp UNDER  &kp PLUS   &trans     &trans
+            &kp LCTRL  &trans     &trans     &trans     &trans     &trans        &mmv MOVE_LEFT   &j_hir     &j_tog     &kp LBKT   &kp RBKT   &trans     &trans
             &kp LSHIFT &trans     &trans     &trans     &trans     &trans        &mmv MOVE_RIGHT  &trans     &trans     &kp LBRC   &kp RBRC   &trans     &trans
             &trans     &kp LGUI   &kp LALT   &kp SPACE  &kp HOME   &kp PG_UP     &mkp RCLK        &trans     &trans     &trans     &trans     &trans    
             >;
