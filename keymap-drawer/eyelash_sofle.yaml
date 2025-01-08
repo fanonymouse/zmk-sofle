@@ -55,13 +55,13 @@ layers:
   - PLAY PAUSE
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
-  - {t: '$$mdi:keyboard-space$$', h: '1'}
-  - $$mdi:arrow-left-bold$$
+  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:arrow-left-bold$$', h: '1'}
   - $$mdi:arrow-up-bold$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:arrow-down-bold$$
-  - $$mdi:arrow-right-bold$$
-  - {t: '$$mdi:keyboard-space$$', h: '2'}
+  - {t: '$$mdi:arrow-right-bold$$', h: '2'}
+  - $$mdi:keyboard-space$$
   - {t: '-', s: _}
   - {t: '=', s: +}
   '1':
@@ -120,8 +120,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - LMETA
   - $$mdi:apple-keyboard-option$$
-  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
   - PG DN
@@ -190,7 +190,7 @@ layers:
   - PG UP
   - $$mdi:mouse-right-click-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - _
   - +
