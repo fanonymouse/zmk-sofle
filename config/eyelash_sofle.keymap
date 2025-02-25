@@ -51,6 +51,15 @@
                 , <&macro_tap &kp W &kp N0 &kp R &kp D &kp N3 &kp N1 &kp N4 &kp N1>
                 ;
         };
+        sh_pwd: sh_pwd {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LSHFT>
+                , <&macro_tap &kp P &kp N2 &kp N4 &kp N4>
+                , <&macro_release &kp LSHFT>
+                ;
+        };
         j_tog: j_ime_toggle {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -138,7 +147,7 @@
             &kp TAB    &kp Q      &kp W      &kp E      &kp R      &kp T       &kp DOWN_ARROW      &kp Y      &kp U            &kp I      &kp O      &kp P      &kp APOS
             &kp LCTRL  &kp A      &kp S      &kp D      &kp F      &kp G       &kp LEFT_ARROW      &kp H      &kp J            &kp K      &kp L      &kp SEMI   &kp ENTER
             &kp LSHIFT &kp Z      &kp X      &kp C      &kp V      &kp B       &kp RIGHT_ARROW     &kp N      &kp M            &kp COMMA  &kp DOT    &kp SLASH  &kp BSLH
-            &kp C_PP   &kp LGUI   &kp LALT   &kp SPACE  &lt_qt LAYER_1 LEFT  &kp UP  &kp ENTER  &kp DOWN  &lt_qt LAYER_2 RIGHT  &kp SPACE  &kp MINUS  &kp EQUAL
+            &kp C_PP   &kp LGUI   &kp LALT   &lt_qt LAYER_1 SPACE  &kp LEFT  &kp UP  &kp ENTER  &kp DOWN  &kp RIGHT  &lt_qt LAYER_2 SPACE  &kp MINUS  &kp EQUAL
             >;
 
             sensor-bindings = <&scroll_encoder_h>;
@@ -148,7 +157,7 @@
         layer_1 {
             bindings = <
             &kp GRAVE  &kp F1     &kp F2     &kp F3     &kp F4     &kp F5        &mmv MOVE_UP     &kp F6     &kp F7     &kp F8     &kp F9     &kp F10    &trans
-            &kp CAPS   &as_pwd    &my_pwd    &trans     &trans     &trans        &mmv MOVE_DOWN   &trans     &trans     &kp MINUS  &kp EQUAL  &trans     &trans
+            &kp CAPS   &as_pwd    &my_pwd    &sh_pwd    &trans     &trans        &mmv MOVE_DOWN   &trans     &trans     &kp MINUS  &kp EQUAL  &trans     &trans
             &kp LCTRL  &trans     &trans     &trans     &trans     &trans        &mmv MOVE_LEFT   &trans     &trans     &kp LBKT   &kp RBKT   &trans     &trans
             &kp LSHIFT &kp F11    &kp F12    &kp PSCRN  &kp DEL    &trans        &mmv MOVE_RIGHT  &trans     &trans     &kp LBRC   &kp RBRC   &trans     &trans
             &kp C_MUTE &kp LGUI   &kp LALT   &trans     &trans     &trans        &mkp LCLK        &kp PG_DN  &kp END    &kp SPACE  &trans     &trans
