@@ -55,13 +55,13 @@ layers:
   - $$mdi:play-pause$$
   - LGUI
   - $$mdi:apple-keyboard-option$$
-  - $$mdi:keyboard-space$$
-  - {t: '$$mdi:arrow-left-bold$$', h: LAYER1}
+  - {t: '$$mdi:keyboard-space$$', h: LAYER1}
+  - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-up-bold$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:arrow-down-bold$$
-  - {t: '$$mdi:arrow-right-bold$$', h: LAYER2}
-  - $$mdi:keyboard-space$$
+  - $$mdi:arrow-right-bold$$
+  - {t: '$$mdi:keyboard-space$$', h: LAYER2}
   - {t: '-', s: _}
   - {t: '=', s: +}
   LAYER1:
@@ -81,7 +81,7 @@ layers:
   - $$mdi:apple-keyboard-caps$$
   - '&as_pwd'
   - '&my_pwd'
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&sh_pwd'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
@@ -120,8 +120,8 @@ layers:
   - $$mdi:volume-off$$
   - LGUI
   - $$mdi:apple-keyboard-option$$
-  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
   - PG DN
@@ -190,7 +190,7 @@ layers:
   - PG UP
   - $$mdi:mouse-right-click-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
